@@ -1,0 +1,85 @@
+#compare {
+    margin-top: 30px;
+
+    .compaertop {
+        width: 18.76%;
+        margin-right: 20px;
+      &:last-child{
+          margin-right: 0;
+      }
+        .product {
+            @include fntfml(#666, 16px, 400, $poppins);
+        }
+        
+        .delet {
+            margin-bottom: 5px;
+            color: #333;
+
+            &:hover {
+                color: #336699;
+            }
+        }
+
+        .img {
+            position: relative;
+
+            &:hover {
+                .overly {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .overly {
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+
+                ul {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+
+                    li {
+                        a {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            line-height: 35px;
+                            text-align: center;
+                            font-size: 15px;
+                            background-color: #fff;
+                            color: #333;
+                            margin-bottom: 5px;
+
+                            &:hover {
+                                background-color: #336699;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copname{
+            @include fntfml(#333, 13px, 400, $poppins);
+            margin-top: 10px;
+            transition: $trans;
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            -ms-transition: $trans;
+            -o-transition: $trans;
+            &:hover{
+                color: #336699;
+            }
+        }
+    }
+}

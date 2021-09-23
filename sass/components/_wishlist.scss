@@ -1,0 +1,141 @@
+#washlistc {
+    margin-top: 30px;
+
+    .wishhead {
+
+        @include fntfml(#333, 20px, 600, $poppins);
+        text-transform: capitalize;
+
+    }
+
+    .washlistmain {
+        margin-top: 15px;
+
+        .wish1 {
+            h2 {
+                @include fntfml(#333, 16px, 600, $poppins);
+            }
+
+            padding:20px 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .wish2 {
+            padding: 20px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            .wish22 {
+                @include fntfml(#666, 14px, 500, $poppins);
+
+                &:hover {
+                    color: #0d6efd;
+                }
+            }
+
+            .wish21 {
+
+                a {
+                    position: relative;
+
+                    p {
+                        position: absolute;
+                        right: 0;
+                        top: -5px;
+                        @include fntfml(#333, 15px, 500, $poppins);
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.39);
+                        line-height: 20px;
+                        text-align: center;
+
+                        &:hover {
+                            color: #336699;
+                        }
+                    }
+                }
+
+            }
+
+            .wishprice {
+                @include fntfml(#333, 15px, 600, $poppins);
+            }
+
+            .wishstock {
+                @include fntfml(#0d6efd, 15px, 400, $poppins);
+            }
+
+            .wishorder1,
+            .wishorder2 {
+                @include fntfml(#333, 15px, 500, $poppins);
+                padding: 0 25px;
+                line-height: 32px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                border: 1px solid #333;
+                text-transform: uppercase;
+            }
+
+            .wishorder1 {
+                &:hover {
+                    background-color: #fafafaf3;
+                }
+            }
+
+            .wishorder2 {
+                margin-left: 8px;
+                background-color: #333;
+                color: #fff;
+                &:hover {
+                    background-color: rgba(51, 51, 51, 0.918);
+                }
+            }
+           
+        }
+        .wish_social{
+            padding: 30px 0;
+          h3{
+              margin-top: 3px;
+            @include fntfml(#333, 20px, 600, $poppins);
+          }
+          ul{
+              margin-left: 20px;
+              li{
+                  margin-right: 10px;
+                  a{
+                    @include fntfml(#333, 15px, 400, $poppins);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    line-height: 30px;
+                    text-align: center;
+                    border: 1px solid #333;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover{
+                        background-color: #0d6efd;
+                        color: #fff;
+                        border-color: #0d6efd;
+                    }
+                  }
+              }
+          }
+        }
+    }
+}

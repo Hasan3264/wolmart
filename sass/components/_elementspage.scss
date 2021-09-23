@@ -1,0 +1,60 @@
+.elements {
+    .elementsmar{
+        margin-top: 50px;
+        .elementsmain {
+       
+            &:nth-child(5),
+            &:nth-child(10),
+            &:nth-child(15){
+             margin-right: 0;
+            }
+            width: 18.76%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.103);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+    
+            a {
+                padding: 25px 40px;
+                display: block;
+                overflow: hidden;
+    
+                i {
+                    padding-top: 10px;
+                    color: #ccc;
+                    font-size: 60px;
+                }
+    
+                &:hover {
+                    i {
+                        transform: scale(1.8);
+                        -webkit-transform: scale(1.8);
+                        -moz-transform: scale(1.8);
+                        -ms-transform: scale(1.8);
+                        -o-transform: scale(1.8);
+                        color: #336699;
+                    }
+                    dl{
+                        color: #336699; 
+                    }
+                }
+    
+                dl {
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+                    @include fntfml(#333, 18px, 500, $poppins);
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,203 @@
+
+#shopfullwidth {
+    margin-top: 20px;
+    .cloth_main {
+        .cloth_inner:nth-child(6),
+        .cloth_inner:nth-child(12){
+            margin-right: 0;
+        }
+
+        .cloth_inner {
+            width: 15.4%;
+            margin-right: 20px;
+            margin-bottom: 40px;
+    
+            &:hover {
+                .cloth_inner_img {
+
+                    .shop_icon {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                }
+            }
+
+            .cloth_inner_img {
+                position: relative;
+                cursor: pointer;
+
+                a {
+                    display: block;
+
+                    img.b-cap {
+                        display: none;
+
+                    }
+                }
+                &:hover {
+                    a {
+                        img.b-cap {
+                            display: block;
+
+                        }
+
+                        img.red-cap {
+                            display: none;
+                        }
+                    }
+                }
+
+                .shop_icon {
+                    overflow: hidden;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translatex(-50%);
+                    -webkit-transform: translatex(-50%);
+                    -moz-transform: translatex(-50%);
+                    -ms-transform: translatex(-50%);
+                    -o-transform: translatex(-50%);
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+
+                    ul {
+                        background: #fff;
+                        padding: 10px 15px;
+                        display: flex;
+                        transition: $trans;
+                        -webkit-transition: $trans;
+                        -moz-transition: $trans;
+                        -ms-transition: $trans;
+                        -o-transition: $trans;
+
+                        li {
+                            margin: 0;
+
+                            a {
+                                font-size: 20px;
+                                color: #666;
+                                margin: 0px 10px;
+                                border-radius: 5px;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                -ms-border-radius: 5px;
+                                -o-border-radius: 5px;
+
+
+                                &:hover {
+
+                                    color: #336699;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .review {
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    background: #f77c29;
+                    padding: 3px 10px;
+                    @include fntfml(#fff, 14px, 500, $poppins);
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+                .lamp_timer1{
+                   left: 5%;
+                    width: 90%;
+                    ul {
+                        padding-left: 5px;
+                        li{
+                            margin-right: 8px !important;
+                         }
+                    }
+                   
+                }
+            }
+
+            .cloth_inner_text {
+                p {
+                    a {
+                        @include fntfml(#333, 15px, 400, $poppins);
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: #336699
+                        }
+                    }
+                }
+
+                dl {
+                    a {
+                        @include fntfml(#666, 13px, 400, $poppins);
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: #336699;
+                        }
+                    }
+
+                    margin-bottom: 0;
+                }
+
+                .star {
+                    a {
+                        display: inline-block;
+
+                        i {
+                            color: #f77c29;
+                            font-size: 13px;
+                        }
+
+                        .s_icon {
+                            color: #c2c2c2;
+                        }
+
+                    }
+                }
+
+
+                span {
+                    @include fntfml(#666, 13px, 400, $poppins);
+                    margin-left: 5px;
+                }
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    margin-top: 5px;
+
+                    span {
+                        @include fntfml(#aaa, 16px, 500, $poppins);
+                        text-decoration: line-through;
+                    }
+
+                }
+
+                .tips {
+                    display: block;
+
+                    ins {
+                        @include fntfml(#333, 16px, 600, $poppins);
+                    }
+
+                    del {
+                        @include fntfml(#666, 16px, 600, $poppins);
+                    }
+                }
+
+            }
+        }
+
+    }
+}

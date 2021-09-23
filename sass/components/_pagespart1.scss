@@ -1,0 +1,24 @@
+
+#pagespart1{
+    margin:50px 0;
+     .pagespart11{
+        
+         text-align: center;
+         h2{
+            @include fntfml(#333, 42px, 700, $poppins);
+            text-transform: capitalize;
+         }
+         p{
+            @include fntfml(#666, 14px, 300, $poppins);
+            padding: 30px 192px;
+         }
+     }
+     .img1{
+        overflow: hidden;
+         border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+     }
+}

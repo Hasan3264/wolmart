@@ -1,0 +1,169 @@
+#compare2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    .comp {
+        >li {
+            width: 18%;
+        }
+    }
+
+    .compare21 {
+        padding: 30px 0;
+        background-color: #f8f8f8;
+
+        li {
+
+
+            @include fntfml(#336699, 14px, 400, $poppins);
+
+            .colar {
+                @include fntfml(#666, 14px, 400, $poppins !important);
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .compare22 {
+        padding: 30px 0;
+
+        li {
+            @include fntfml (#ffa800, 14px, 400, $poppins);
+
+            .colar {
+                color: #666;
+            }
+        }
+    }
+
+    .compare23 {
+        padding: 20px 0;
+        background-color: #f8f8f8;
+
+        li {
+            span {
+                display: block;
+                @include fntfml(#333, 13px, 400, $poppins);
+                padding-left: 20px;
+                padding-right: 10px;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+
+            .colar {
+                @include fntfml(#666, 14px, 400, $poppins);
+            }
+        }
+    }
+
+    .compare24 {
+        padding: 30px 0;
+
+        li {
+            .colar {
+                @include fntfml(#666, 14px, 400, $poppins);
+            }
+
+            ul {
+                position: relative;
+
+                &:hover {
+                    .phov {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                .phov {
+                    position: absolute;
+                    left: 8%;
+                    top: -51px;
+                    visibility: hidden;
+                    opacity: 0;
+
+                    p {
+                        width: 50px;
+                        height: 50px;
+                        background: #333;
+                        @include fntfml(#fff, 14px, 400, $poppins);
+                        position: relative;
+                        line-height: 50px;
+                        text-align: center;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            bottom: -7px;
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-top: 10px solid #333;
+                            transform: translateX(-50%);
+                            -webkit-transform: translateX(-50%);
+                            -moz-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            -o-transform: translateX(-50%);
+                        }
+                    }
+                }
+
+                li {
+                    .icol {
+                        color: #ffa800;
+                    }
+
+                    a {
+                        @include fntfml(#ccc, 14px, 400, $poppins);
+                        margin-left: 1px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .Category {
+        background-color: #f8f8f8;
+    }
+
+    .compare25 {
+        padding: 30px 0;
+
+        li {
+            @include fntfml (#333, 14px, 400, $poppins);
+
+            .colar {
+                color: #666;
+            }
+        }
+
+    }
+
+    .compare26 {
+        padding: 30px 0;
+
+        .colar {
+            color: #666;
+        }
+
+        .swatch {
+            margin-top: 5px;
+            margin-right: 0.4rem;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+}

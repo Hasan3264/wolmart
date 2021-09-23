@@ -1,0 +1,85 @@
+.dokan_banner {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+
+    .overly {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        padding-top: 30px;
+        padding-left: 45px;
+        background: rgba(51, 51, 51, 0.87);
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        h4 {
+            margin-top: 20px;
+            @include fntfml(#fff, 20px, 700, $poppins);
+        }
+
+        dl {
+            margin-top: 10px;
+            @include fntfml(#ccc, 15px, 300, $poppins);
+            margin-bottom: 0;
+        }
+
+        a {
+            margin-top: 10px;
+            @include fntfml(#ccc, 15px, 300, $poppins);
+            transition: $trans;
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            -ms-transition: $trans;
+            -o-transition: $trans;
+
+            &:hover {
+                color: #ff9742;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            @include fntfml(#ccc, 15px, 300, $poppins);
+        }
+
+        ul {
+            margin-top: 20px;
+            li {
+                margin-right: 10px;
+                a {
+                    border: 1px solid #ccc;
+                    line-height: 30px;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+        
+                    @include fntfml(#ccc,15px,300,$poppins);
+                    &:hover{
+                        background-color: #ff9742;
+                        color: #fff;
+                        border-color: #ff9742;
+                    }
+                }
+            }
+        }
+    }
+}
+

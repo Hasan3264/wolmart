@@ -1,0 +1,5 @@
+.blog_banner{
+    h1{
+        @include fntfml(#333, 38px, 700, $poppins);
+    }
+}

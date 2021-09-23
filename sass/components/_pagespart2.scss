@@ -1,0 +1,237 @@
+#pagespart2 {
+    margin: 70px 0;
+
+    .pagespart21 {
+        h2 {
+            @include fntfml(#333, 35px, 600, $poppins);
+        }
+    }
+
+    .accordion-container {
+        .accordion-title {
+            padding: 17px 0;
+            border-bottom: 1px solid #f1f1f1;
+            background: transparent;
+            @include fntfml(#333, 20px, 600, $poppins);
+
+            &::after,
+            &::before {
+                background: #333;
+            }
+        }
+
+        .accordion-content {
+            border: 0;
+            padding: 0;
+
+            p {
+                @include fntfml(#666, 15px, 400, $poppins);
+                line-height: 24px;
+            }
+        }
+    }
+
+    .img {
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        overflow: hidden;
+    }
+}
+
+#counter {
+    margin-bottom: 70px;
+
+    .countersly {
+        h2 {
+            display: inline-block;
+            @include fntfml(#ccc, 50px, 900, $poppins);
+        }
+
+        span {
+            @include fntfml(#ccc, 50px, 900, $poppins);
+            text-transform: uppercase;
+        }
+
+        h3 {
+            @include fntfml(#333, 20px, 600, $poppins);
+        }
+
+        p {
+            margin-top: 5px;
+            @include fntfml(#666, 15px, 400, $poppins);
+        }
+    }
+}
+
+#pagespart3 {
+    padding: 80px;
+    background: #fafafb;
+
+    .img {
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .textpagespart3 {
+        align-content: center;
+
+        h2 {
+            @include fntfml(#333, 40px, 700, $poppins);
+        }
+
+        p {
+            margin-top: 20px;
+            @include fntfml(#666, 15px, 400, $poppins);
+            line-height: 24px;
+        }
+
+        a {
+            margin-top: 20px;
+            padding: 0 30px;
+            line-height: 50px;
+            background: #333;
+            @include fntfml(#fff, 12px, 600, $poppins);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+    }
+
+    .pagespart3lasthead {
+        margin-top: 75px;
+
+        h2 {
+            @include fntfml(#333, 28px, 600, $poppins);
+        }
+    }
+
+    .pagespart3last {
+        margin-top: 50px;
+
+        h5 {
+            @include fntfml(#333, 20px, 400, $poppins);
+            margin-top: 15px;
+        }
+       .extra{
+           margin-top: 33px;
+       }
+    }
+   
+}
+
+
+#pagespart4 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    .pagespart4head {
+        h4 {
+            @include fntfml(#333, 25px, 700, $poppins);
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include fntfml(#666, 16px, 400, $poppins);
+            line-height: 20px;
+            padding: 0 300px;
+        }
+    }
+
+    .pagespart4main {
+        margin-top: 30px;
+         margin-right: 20px;
+        .img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+           
+            &:hover{
+               .overly{
+                visibility: visible;
+                opacity: 1;
+               }
+            }
+
+            .overly {
+                transition: $trans;
+                -webkit-transition: $trans;
+                -moz-transition: $trans;
+                -ms-transition: $trans;
+                -o-transition: $trans;
+                visibility: hidden;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.192);
+
+                ul {
+                    display: flex;
+                    position: absolute;
+                    left: 80px;
+                    top: 50%;
+                    transform: translateY(-50%, );
+                    -webkit-transform: translateY(-50%, );
+                    -moz-transform: translateY(-50%, );
+                    -ms-transform: translateY(-50%, );
+                    -o-transform: translateY(-50%, );
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            border: 2px solid #f1f1f1;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            text-align: center;
+                            color: #fff;
+                            transition: $trans;
+                            -webkit-transition: $trans;
+                            -moz-transition: $trans;
+                            -ms-transition: $trans;
+                            -o-transition: $trans;
+                            font-size: 27px;
+
+                            &:hover {
+                                background: #336699;
+                                border-color: #336699;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        @include fntfml(#000, 16px, 600, $poppins);
+        margin-top: 20px;
+    }
+
+    p {
+        @include fntfml(#666, 14px, 400, $poppins);
+        margin-top: 5px;
+    }
+}

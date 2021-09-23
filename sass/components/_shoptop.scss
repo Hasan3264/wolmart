@@ -1,0 +1,120 @@
+.shoptop {
+    margin-top: 30px;
+    padding: 0 !important;
+
+    .shoptop1 {
+        .btn-primary12 {
+            margin-right: 30px;
+            border: 2px solid #336699;
+            padding: 0 30px;
+            line-height: 35px;
+            @include fntfml(#336699, 15px, 600, $poppins);
+            position: relative;
+            background-color: #fff;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            &:hover {
+                background-color: #336699;
+                color: #fff;
+            }
+
+            i {
+                position: absolute;
+                left: 9px;
+                top: 9px;
+            }
+        }
+
+        .offcav {
+            @include fntfml(#333, 15px, 700, $poppins);
+
+            .closeall {
+                @include fntfml(#333, 15px, 400, $poppins);
+                background-color: transparent;
+                line-height: 30px;
+                padding: 0 20px;
+                border: 1px solid #333;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+            }
+        }
+
+        .form-select:focus {
+            box-shadow: 0 0 0 0;
+        }
+
+        .formselect {
+            p {
+                @include fntfml(#333, 14px, 500, $poppins);
+                text-transform: capitalize;
+                align-items: center;
+                margin-top: 9px;
+                margin-right: 20px;
+            }
+
+            .forms {
+                width: 170px;
+                @include fntfml(#333, 14px, 300, $poppins);
+
+            }
+        }
+    }
+
+    .shoptop2 {
+
+        .forms {
+            width: 100px;
+            @include fntfml(#333, 14px, 300, $poppins);
+        }
+
+        i {
+            color: #666;
+            font-size: 35px;
+            margin-left: 20px;
+        }
+    }
+
+}
+
+#shopfulll {
+    margin-top: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    .shopfulll1 {
+        p {
+            @include fntfml(#666, 16px, 300, $poppins);
+
+            span {
+                @include fntfml(#333, 16px, 400, $poppins);
+            }
+        }
+    }
+
+    .shopfulll2 {
+        a {
+            @include fntfml(#666, 16px, 300, $poppins);
+            margin-left: 10px;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                border: 1px solid #f1f1f1;
+                width: 25px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+            }
+        }
+    }
+}
